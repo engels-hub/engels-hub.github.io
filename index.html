@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>↓AP↓</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HTML5 Example Page">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+	
+<div id="blob-wrapper">
+  <div id="blob" class="blob"></div>
+</div>
+<div id="wrapper" onload="load()">
+  <section id="landing" style="cursor:none;">
+
+    <h1 id="name">welcome →→→→→→→</h1>
+
+    <div id="menu">
+      <a href="#education" class="menu-item" onclick="changeDot(1)">→education</a>
+      <a href="#experience" class="menu-item" onclick="changeDot(2)">→experience</a>
+      <a href="#about" class="menu-item" onclick="changeDot(3)">→contact</a>
+    </div>
+    <div class="footer-nav">
+      <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512">
+        <path style="fill:#1e1e1e" d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z" />
+
+      </svg>
+      <a href="#education" onclick="changeDot(1)">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512">
+          <path style="fill:#1e1e1e" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+
+        </svg>
+      </a>
+    </div>
+  </section>
+  <section id="education">
+
+    <div class="range" id="slider-div">
+      <input type="range" id="arrow_range" class="range-style" min="0" max="4" value="0" onchange="revealCard(this.value)">
+
+      <div class="pills">
+        <div class="pill" onclick="showCard(0)">→</div>
+        <div class="pill" onclick="showCard(1)">→</div>
+        <div class="pill" onclick="showCard(2)">→</div>
+        <div class="pill" onclick="showCard(3)">→</div>
+      </div>
+    </div>
+
+    <div id="neu-cards">
+      <div class="neu-card neu-card1 hidden">
+        <p>
+          Hey! My name is Artjoms. I like math and pressing buttons on my computer.</p>
+        <model-viewer src="https://cdn.glitch.global/618b33cd-41f5-4be3-8770-c16eb7fe8c46/cube.glb?v=1693217122599" ar ar-modes="webxr scene-viewer quick-look" camera-controls orientation="45 -45 -45" exposure="0.3" shadow-intensity="0" class="model-viewer" auto-rotate>
+      </div>
+      <div class="neu-card neu-card2 hidden">
+        <h2 data-value="Education" onmouseover="glitch(this)">
+          Education
+        </h2>
+      </div>
+      <div class="neu-card neu-card3 hidden">
+        <h3>Schools:</h3>
+        <ol>
+          <li>2010 → R40VSK → 2019</li>
+          <li>2019 → RV1Ģ → 2022</li>
+          <li>2022 → RTU DITF → ...</li>
+
+          <ol>
+      </div>
+      <div class="neu-card neu-card4 hidden">
+        <h3>IT-related:</h3>
+        <p>Progmeistars</p>
+        <p>2016 → 2021</p>
+        <p><a href="https://cdn.glitch.global/618b33cd-41f5-4be3-8770-c16eb7fe8c46/img20230828_16582013.pdf?v=1693231930553">[View sertificate]</a></p>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <a href="#landing" onclick="changeDot(0)">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512">
+          <path style="fill:#1e1e1e" d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z" />
+
+        </svg>
+      </a>
+      <a href="#experience" onclick="changeDot(2)">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512">
+
+          <path style="fill:#1e1e1e" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+        </svg>
+      </a>
+    </div>
+  </section>
+  <section id="experience">
+
+    <div class="bar-wrapper" id="bar-wrapper" onmouseover="stretch()">
+      <div class="bar unstretched" data-size="0.75">
+
+        <svg>
+          <image xlink:href="https://cdn.glitch.global/618b33cd-41f5-4be3-8770-c16eb7fe8c46/js_ts_angular.svg?v=1698176052951" />
+        </svg>
+      </div>
+      <div class="bar unstretched" data-size="0.75">
+        <svg>
+          <image xlink:href="https://cdn.glitch.global/618b33cd-41f5-4be3-8770-c16eb7fe8c46/flutter_dart.svg?v=1698176052635" />
+        </svg>
+      </div>
+      <div class="bar unstretched" data-size="0.75">
+        <svg>
+          <image xlink:href="https://cdn.glitch.global/618b33cd-41f5-4be3-8770-c16eb7fe8c46/python.svg?v=1698176051865" src="yourfallback.png" />
+        </svg>
+      </div>
+      <div class="bar unstretched" data-size="0.75">
+        <svg>
+          <image xlink:href="https://cdn.glitch.global/618b33cd-41f5-4be3-8770-c16eb7fe8c46/c%2B%2B_c%23_java.svg?v=1698176052264" />
+        </svg>
+      </div>
+    </div>
+    <div id="bar-levels">
+
+      <div id="vlines">
+        <div class="bar-line"></div>
+        <div class="bar-line"></div>
+        <div class="bar-line"></div>
+        <div class="bar-line"></div>
+        <div class="bar-line"></div>
+      </div>
+      <div id="stars">
+        <div class="bar-name">
+          <p>★</p>
+        </div>
+        <div class="bar-name">
+          <p>★★</p>
+        </div>
+        <div class="bar-name">
+          <p>★★★</p>
+        </div>
+        <div class="bar-name">
+          <p>★★★★</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-nav">
+      <a href="#education" onclick="changeDot(1)">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512">
+          <path style="fill:#e0e0e0" d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z" />
+        </svg>
+      </a>
+      <a href="#about" onclick="changeDot(3)">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512">
+          <path style="fill:#e0e0e0" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+
+        </svg>
+    </div>
+  </section>
+  <section id="about">
+    <div class="about-icons">
+      <a href="https://t.me/a_papsh"><i class="fa-brands fa-telegram"></i></a>
+      <a href="www.linkedin.com/in/artjoms-papšs-87634b248"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="href=" mailto:artjompapsh@gmail.com"><i class="fa-solid fa-at"></i></a>
+      <a href="https://www.pigeongram.com"><i class="fa-brands fa-square-x-twitter" id="twitter"></i></a>
+
+    </div>
+    <h1 id="name">←←←←←←← contact</h1>
+    <div class="footer-nav">
+      <a href="#experience" onclick="changeDot(2)">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512">
+          <path style="fill:#e0e0e0" d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z" />
+
+        </svg>
+      </a>
+      <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512">
+
+        <path style="fill:#909090" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+      </svg>
+    </div>
+  </section>
+</div>
+<div id="landing-footer">
+  <div id="dots">
+
+    <div class="dot dot-full"><a href="#landing" onClick="changeDot(0)"></a></div>
+    <div class="dot"><a href="#education" onClick="changeDot(1)"></a></div>
+    <div class="dot"><a href="#experience" onClick="changeDot(2)"></a></div>
+    <div class="dot"><a href="#about" onClick="changeDot(3)"></a></div>
+  </div>
+  <a href="#landing" onClick="changeDot(0)">
+    <p>
+      @AP 2023
+    </p>
+  </a>
+
+</div>
+</body>
+</html>
